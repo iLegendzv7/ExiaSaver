@@ -1,0 +1,13 @@
+2016-12-14 19:34:28| Statique | image numero 1|[1]}
+2016-12-15 9:7:23| Statique | image numero 5|[1]
+2016-12-15 9:11:15| Statique | image numero 1|[1]
+2016-12-15 9:11:21| Statique | image numero 5|[1]
+2016-12-15 9:11:27| Statique | image numero 2|[1]
+2016-12-15 9:11:32| Statique | image numero 4|[1]
+2016-12-15 11:6:15| Statique | image numero 4196560|[1]
+2016-12-15 11:35:55| Dynamique |[2]
+2016-12-15 11:37:31| Dynamique |[2]
+2016-12-15 11:38:32| Dynamique |[2]
+2016-12-15 11:40:17| Dynamique |[2]
+2016-12-15 11:41:12| Dynamique |[2]
+2016-12-15 11:41:51| Dynamique |[2]
