@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>			//Ajout librairies
 #include <stdlib.h> 
 #include <time.h>
 
@@ -8,7 +8,7 @@ void fonctionStats()
 
 system("clear");
 
-int r=0;
+int r=0;				//Initialisation variables
 int s=0;
 int memoire=0;
 int tableau[3]={0,0,0};
@@ -27,37 +27,37 @@ historique = fopen("historique.txt","r");
 
 
 
-   do {
+   do {							//Lecture du fichier caractère par caractère
               c = fgetc (historique);
-                if (c == '[')
+                if (c == '[')				//Recherche du caractère [
                 {
                  c = fgetc (historique);
-                    if (c == '1')
+                    if (c == '1')			//Lecture variable et ajout de 1 a la variable nombreStatique
                     {
                         nombreStatique++;
                     }
-                    else if (c == '2')
+                    else if (c == '2')			//Lecture variable et ajout de 1 a la variable nombreDynamique
                     {
                         nombreDynamique++; //
                     }
-                    if (c == '3')
+                    if (c == '3')			//Lecture variable et ajout de 1 a la variable nombreInteractif
                     {
                         nombreInteractif++;
                     }
 
                 }
-            } while (c != EOF);
+            } while (c != EOF);				//Fin de lecture
 
-    nombreTotal = nombreStatique + nombreDynamique + nombreInteractif ;
+    nombreTotal = nombreStatique + nombreDynamique + nombreInteractif ;		//Calcul de stats
     statStatique = ( 100 * nombreStatique / nombreTotal );
     statDynamique = ( 100 * nombreDynamique / nombreTotal );
     statInteractif = ( 100 * nombreInteractif / nombreTotal );
 
-    tableau[0]= nombreStatique;
+    tableau[0]= nombreStatique;				//Incrémentation de valeurs
     tableau[1]= nombreDynamique;
     tableau[2]= nombreInteractif;
     
-for (r = 0 ; r > 3; r++){
+for (r = 0 ; r > 3; r++){						//Fonction de tri
                             for ( s = 0 ; s > 3; s++){
                                  if (tableau[s]<=tableau[s+1]){
                                     memoire=tableau[s];
@@ -66,7 +66,7 @@ for (r = 0 ; r > 3; r++){
                                  }
                             }
     }
-printf("----------------------------------------------------------------------\n");
+printf("----------------------------------------------------------------------\n");		//Affichage ordonné des valeurs et de leurs variables
    if (tableau[0]==nombreStatique){
 	printf ("La plus grande valeur est pour le statique qui est sortie %d fois\n",nombreStatique);
 	}
@@ -104,7 +104,7 @@ printf("----------------------------------------------------------------------\n
     scanf("%d",&choix);
     printf("----------------------------------------------------------------------\n");
 
-    switch (choix)
+    switch (choix)				//Affichage statistique
     {
         case 1:
         printf ("Statistique du statique = %d%c\n",statStatique,37);
